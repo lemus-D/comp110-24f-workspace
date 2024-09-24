@@ -48,11 +48,14 @@ def contains_char(word: str, letter: str) -> None:
     if word[4] == letter:
         print(letter + " found at index 4")
         x = x + 1
-    # Checked the x value to see if the value actually increased or not then just did print statements to reflect that
+    # Checked the x value to see if the value actually increased or not then just did
+    # print statements to reflect that
     if x == 0:
-        print("No instances of" + letter + " found in " + word)
-    elif x != 0:
-        print(str(x) + " insinstances of " + letter + " found in " + word)
+        print("No instances of " + letter + " found in " + word)
+    elif x == 1:
+        print(str(x) + " instance of " + letter + " found in " + word)
+    elif x > 1:
+        print(str(x) + " instances of " + letter + " found in " + word)
 
 
 if __name__ == "__main__":
